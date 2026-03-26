@@ -102,3 +102,35 @@ It bridges the gap between academic projects and real-world engineering practice
 ✦ One-Line Summary
 
 A static web application deployed with Kubernetes and enhanced with real-time monitoring to simulate a production-ready cloud-native system.
+
+<img width="949" height="458" alt="image" src="https://github.com/user-attachments/assets/3574836b-4a42-4fc3-8e86-3f981a797753" />
+
+<img width="949" height="505" alt="image" src="https://github.com/user-attachments/assets/ffa46c9f-342d-4193-b232-7c8f2069d5be" />
+
+<img width="949" height="505" alt="image" src="https://github.com/user-attachments/assets/4223dba8-ce0f-4357-a529-6a8f1c6ad750" />
+
+<img width="949" height="503" alt="image" src="https://github.com/user-attachments/assets/43d8d9fd-ce71-45da-ab37-6a8a27593e93" />
+
+<img width="949" height="499" alt="image" src="https://github.com/user-attachments/assets/59928331-26a7-4494-b312-9a793a69a5fa" />
+
+<img width="949" height="493" alt="image" src="https://github.com/user-attachments/assets/7549b592-cfba-493a-9332-a8f18f5e698f" />
+
+<img width="949" height="496" alt="image" src="https://github.com/user-attachments/assets/d94cf33e-abfa-40f4-8974-c105fd6b7fd4" />
+
+<img width="949" height="511" alt="image" src="https://github.com/user-attachments/assets/d6722fe3-a250-4e24-a3b8-611f24df4c48" />
+
+<img width="949" height="505" alt="image" src="https://github.com/user-attachments/assets/82e04e53-edbb-49d2-884d-d7cd65c4d205" />
+
+<img width="949" height="487" alt="image" src="https://github.com/user-attachments/assets/8aa8a948-0da8-40eb-b884-a09dfad17699" />
+
+<img width="949" height="504" alt="image" src="https://github.com/user-attachments/assets/c60ab0ec-13fa-468e-8ed9-2b51c6509317" />
+
+<img width="949" height="503" alt="image" src="https://github.com/user-attachments/assets/e97884cd-d48e-47d6-97d0-043237b795f6" />
+
+<img width="949" height="505" alt="image" src="https://github.com/user-attachments/assets/34b20217-2055-4886-b7d1-81d93e53380e" />
+
+<img width="949" height="500" alt="image" src="https://github.com/user-attachments/assets/b9c693a5-42ff-48f6-85c0-9d4b92b75493" />
+
+<img width="949" height="497" alt="image" src="https://github.com/user-attachments/assets/4c7f7527-afb3-4bf6-a155-7a3065be7296" />
+
+<img width="949" height="487" alt="image" src="https://github.com/user-attachments/assets/c902dd7b-30fa-4ffb-b8c5-c40cc93bd73b" />
