@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ai-resume-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: ai-resume
+  template:
+    metadata:
+      labels:
+        app: ai-resume
+    spec:
+      containers:
+      - name: ai-resume-container
+        image: ai-resume-landing
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 80
