@@ -1,4 +1,4 @@
-AI Resume Analyzer – Cloud Native Deployment with Kubernetes Monitoring
+## AI Resume Analyzer – Cloud Native Deployment with Kubernetes Monitoring
 ✦ Project Overview
 
 This project is a modern static landing page for an AI Resume Analyzer platform, designed to simulate how real-world SaaS applications are deployed and monitored in a cloud-native environment.
