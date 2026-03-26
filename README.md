@@ -1,113 +1,104 @@
-# AI-Resume-Analyzer
-✦ AI Resume Analyzer
-Cloud-Native Static Application with Kubernetes Monitoring
-❖ Overview
+AI Resume Analyzer – Cloud Native Deployment with Kubernetes Monitoring
+✦ Project Overview
 
-This project is a cloud-native deployment of a static landing page that simulates an AI-powered Resume Analyzer platform. The main focus is not just on frontend design, but on how a simple application can be containerized, deployed, scaled, and monitored using modern DevOps tools.
+This project is a modern static landing page for an AI Resume Analyzer platform, designed to simulate how real-world SaaS applications are deployed and monitored in a cloud-native environment.
 
-The application is deployed on a local Kubernetes cluster and monitored in real time using Prometheus and Grafana, providing insights into system performance and resource utilization.
+The focus is not just on frontend design, but on how an application is containerized, deployed, scaled, and monitored using industry-standard DevOps tools.
 
-❖ Key Highlights
-Clean and responsive landing page design
-Drag-and-drop resume upload interface (UI simulation)
-Simulated ATS score with dynamic progress bar
-Containerized using Docker
-Deployed on Kubernetes using Minikube
-Exposed via NodePort service
-Real-time monitoring using Prometheus
-Visualization dashboards using Grafana
-Load simulation to observe system behavior
-❖ Tech Stack
+It demonstrates how even a simple web application can follow production-like architecture.
+
+✦ Key Highlights
+
+◈ Clean and modern landing page UI
+◈ Drag & drop resume upload interface (demo-based)
+◈ Simulated ATS score with dynamic progress bar
+◈ Containerized using Docker
+◈ Deployed on Kubernetes using Minikube
+◈ Real-time monitoring using Prometheus
+◈ Visualization through Grafana dashboards
+◈ Load simulation to observe system behavior
+
+✦ Tech Stack
 
 Frontend
+HTML • CSS • JavaScript
 
-HTML
-CSS
-JavaScript
-
-DevOps & Cloud
-
+Containerization
 Docker
+
+Orchestration
 Kubernetes (Minikube)
+
+Monitoring & Observability
+Prometheus • Grafana
+
+Package Management
 Helm
 
-Monitoring
-
-Prometheus
-Grafana
-❖ Architecture
+✦ Architecture
 User (Browser)
         ↓
 Kubernetes Service (NodePort)
         ↓
-Deployment (Manages Pods)
+Deployment
         ↓
 Pods (Nginx Container)
         ↓
-Static Website (HTML, CSS, JS)
+Static Website
 
-Monitoring Pipeline:
+Monitoring Flow:
+Pods → Prometheus → Grafana → Dashboard
+✦ How It Works
 
-Kubernetes Cluster → Prometheus → Grafana Dashboard
-❖ How It Works
+The application is packaged inside a Docker container using Nginx to serve static files.
+This container is deployed into a Kubernetes cluster using a Deployment configuration.
 
-The application is packaged into a Docker container using Nginx to serve static files. This container is deployed on a Kubernetes cluster using a Deployment configuration, which manages multiple replicas of the application.
+A Service is used to expose the application so it can be accessed via the browser.
 
-A Kubernetes Service exposes the application, making it accessible through the browser.
+For monitoring, Prometheus collects system and container metrics, while Grafana visualizes them in the form of dashboards.
 
-For monitoring, Prometheus collects metrics such as CPU and memory usage from the cluster, while Grafana visualizes these metrics through dashboards. Load is generated manually to simulate real user traffic and observe system behavior.
+✦ Load Generation (Short Explanation)
 
-❖ Setup & Execution
-1. Start Minikube
-minikube start
-2. Build Image
-minikube image build -t ai-resume-landing .
-3. Deploy to Kubernetes
-kubectl apply -f k8s/
-4. Access Application
-minikube service ai-resume-service
-❖ Monitoring Setup
-Install Prometheus
-helm install prometheus prometheus-community/prometheus -n monitoring
-Install Grafana
-helm install grafana grafana/grafana -n monitoring
-Access Dashboards
-kubectl port-forward svc/grafana 3000:80 -n monitoring
-❖ Load Testing
+To simulate real user traffic, a lightweight container is used to continuously send requests to the application.
 
-To simulate real-world traffic:
+This creates artificial load, which increases CPU usage.
+The changes in system behavior can then be observed in real time through Grafana dashboards.
 
-kubectl run -i --tty load-generator --rm --image=busybox -- /bin/sh
+✦ Why This Project Stands Out
 
-Inside container:
+Unlike typical frontend projects, this implementation focuses on:
 
-while true; do wget -q -O- http://ai-resume-service; done
+Real-world deployment practices
+Container-based architecture
+Cluster management using Kubernetes
+Monitoring and observability
+Understanding system behavior under load
 
-This helps visualize CPU and system metrics in Grafana.
+It reflects practical skills required for Cloud, DevOps, and Backend roles.
 
-❖ Key Learnings
-Practical understanding of containerization
-Deployment using Kubernetes
+✦ Key Learnings
+Containerization using Docker
+Kubernetes concepts (Pods, Deployments, Services)
 Service exposure and networking
-Real-time monitoring and observability
-Handling system load and performance tracking
-❖ Limitations
+Monitoring using Prometheus
+Dashboard creation in Grafana
+Load testing and performance observation
+✦ Limitations
 Static frontend only
 No backend or database
-Resume upload and ATS scoring are simulated
-❖ Future Improvements
-Backend integration for real resume analysis
-Database for storing user data
-Auto-scaling using HPA
-CI/CD pipeline integration
-Deployment on cloud platforms
-❖ Why This Project Stands Out
+File upload and ATS score are simulated
+✦ Future Enhancements
+Add backend API for real resume analysis
+Integrate AI-based resume parsing
+Implement database storage
+Enable auto-scaling using HPA
+Deploy on cloud platforms
+✦ Conclusion
 
-This project goes beyond a traditional frontend implementation. It demonstrates how even a simple application can be deployed using industry-relevant tools and monitored in a production-like environment.
+This project demonstrates how a simple application can be transformed into a cloud-native, scalable, and observable system.
 
-It reflects practical knowledge of cloud-native architecture, making it highly relevant for roles in DevOps, Cloud Engineering, and Backend Systems.
+It bridges the gap between academic projects and real-world engineering practices, making it highly relevant for modern tech roles.
 
-❖ Author
+✦ One-Line Summary
 
-Ritesh Sah
-Cloud & DevOps Enthusiast
+A static web application deployed with Kubernetes and enhanced with real-time monitoring to simulate a production-ready cloud-native system.
